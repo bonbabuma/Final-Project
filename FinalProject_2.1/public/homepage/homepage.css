@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.webpage {
+    border: 1px solid black; /*To take away margin at top*/
+}
+
+nav {
+    border: 0.01px solid blue;
+}
+
+.topbar {
+ border: 1px solid black;
+ border-top: 0;
+ background-color: rgb(43, 125, 180);
+ text-align: center;
+ padding: 10px 5px;
+ width: 100%;
+ float: left;
+ position: fixed;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.topbarReg {
+    padding: 2px 20px;
+    border-right: 1px solid rgb(43, 185, 255)
+}
+
+.signUp , .login {
+    float: right;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 4px 5px;
+}
+
+.signUp {
+    background-color: red;
+}
+
+.login {
+    background-color: orange;
+}
+
+div#homeImg h2 {
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    color: black;
+    font-size: 50px;
+}
+
+div#homeImg {
+    background-image: url(Home_Img.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+div p, div h2 {
+   line-height: 150%;
+   text-align: center; 
+}
+
+.who {
+    background-color: #f2f2f2;
+}
+.who h2 {
+    margin: 0;
+    padding-top: 60px;
+}
+
+.who p {
+    padding-bottom: 60px;
+    margin: 0;
+}
+
+.What {
+    display: flex;
+}
+
+.what {
+    float: left;
+    width: 50%;
+    background-color: rgb(43, 185, 255);
+    margin: 0;
+    overflow-y: scroll;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    flex: 1;
+}
+
+.whatImg {
+    width: 50%;
+    float: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    flex: 1;
+}
+
+.what h2 {
+    padding-top: 45px;
+}
+
+.what p {
+    padding: 0 60px 60px 60px;
+    text-align: left;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+}
+
+.questions textarea, .questions input {
+ width: 75vh;
+}
+
+.questions textarea { /*need to add @media stuff */
+    height: 30vh;
+}
+
+.organize {
+    background-color: blue;
+    padding: 70px 0 200px 0;
+}
+
+.organize h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.organize a {
+    text-decoration: none;
+    left: 50%;
+    padding: 24.5px 62.5px;
+    border-radius: 3px;
+    position: absolute;
+    border: 3px solid white;
+    color: white;
+    margin-top: 30px;
+}

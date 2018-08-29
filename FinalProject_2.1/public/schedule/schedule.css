@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.webpage {
+    border: 1px solid black; /*To take away margin at top*/
+}
+
+nav {
+    border: 0.01px solid blue;
+}
+
+.topbar {
+ border: 1px solid black;
+ border-top: 0;
+ background-color: rgb(43, 125, 180);
+ text-align: center;
+ padding: 10px 5px;
+ width: 100%;
+ float: left;
+ position: fixed;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.topbarReg {
+    padding: 2px 20px;
+    border-right: 1px solid rgb(43, 185, 255)
+}
+
+.signUp , .login {
+    float: right;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 4px 5px;
+}
+
+.signUp {
+    background-color: red;
+}
+
+.login {
+    background-color: orange;
+}
+.signupsheet {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 3px 3px 1px gray;
+    height: 75vh;
+    width: 75vh;
+    left: 50%;
+    top: 9vh;
+    position: relative;
+}
