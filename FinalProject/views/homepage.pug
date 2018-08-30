@@ -1,48 +1,36 @@
-doctype html
-head
-  title homepage
-  link(href='homepage/homepage.css' type='text/css' rel='stylesheet')
-  script(src='homepage/homepage.js')
-nav
-  .topbar
-    a.topbarReg(href='/') Home
-    a.topbarReg(href='#who we are') Who we are
-    a.topbarReg(href='#how it works') How it works
-    a.topbarReg(href='#questions') Questions
-    a.login(href='') Log in
-    a.signUp(href='schedule') Sign up
-.webpage
-  header
-    #homeImg
-      h2 Welcome To MySchedule!!!
-  .content
-    div.who
-      h2 Who we are
-      p
-        | Hi my name is Jason Monette and I'm the creator of MySchedule.com! This webite is the result of my final project for a great coding course that I took called comIT. I doubt that this website will ever get published for any use outside of job/school applications so if you're reading this then your probably looking to hire or accept me into your company/school. I assure you that I will put my best effort for whatever I have applied for. Thanks for viewing my site and welcome to MySchedule.com!
-    div.how
-      h2 How it works (need to add javascript link)
-      p
-        | MySchedule.com uses an algorithm that I wrote that ensures that all positions are filled while no person is double booked. The algorithm can also be configured to satisfy other needs as the company deems neccasary. To view this algorithm you can click the link #[a(href='') here].
-    div.What
-      div.what
-        h2 What we do
-        p 
-          | This site was built to aid in managing human resourses within a company. For example, if a company such as a hospital needed to organise their staff to accompany their patients, while keeping staff on call and trying not to overwork or double book anyone that would be a very difficult job for a person to manage. However, the algorithm at MySchedule is perfect for these types of scenarios. Simply send a link to each staff member to the company account via email, let them upload their available times, and let MySchedule do the work! You can configure the settings to suit the needs/wants of your staff then just sit back and relax. Try MySchedule today!
-      img(src='/homepage/What_Img.png').whatImg
-    .questions
-      a(name='questions')
-      
-      form
-        label
-          h2 Questions?
-        br
-        input(type='text' name='subject' placeholder='Subject')
-        br
-        br
-        textarea(name='questionsBox' placeholder='Enter questions here')
-    div.organize
-      h2 Are you ready to get organized!
-      a(href='schedule') Create schedule
-footer
-  div
+extends ./layout.pug
+
+block content
+  .webpage
+    header
+      #homeImg
+        h2 Welcome To MySchedule!!!
+    .content
+      div.who
+        h2 Who we are
+        p
+          | Hi my name is Jason Monette and I'm the creator of MySchedule.com! This webite is the result of my final project for a great coding course that I took called comIT. I doubt that this website will ever get published for any use outside of job/school applications so if you're reading this then your probably looking to hire or accept me into your company/school. I assure you that I will put my best effort for whatever I have applied for. Thanks for viewing my site and welcome to MySchedule.com!
+      div.how
+        h2 How it works (need to add javascript link)
+        p
+          | MySchedule.com uses an algorithm that I wrote that ensures that all positions are filled while no person is double booked. The algorithm can also be configured to satisfy other needs as the company deems neccasary. To view this algorithm you can click the link #[a(href='') here].
+      div.What
+        div.what
+          h2 What we do
+          p 
+            | This site was built to aid in managing human resourses within a company. For example, if a company such as a hospital needed to organise their staff to accompany their patients, while keeping staff on call and trying not to overwork or double book anyone that would be a very difficult job for a person to manage. However, the algorithm at MySchedule is perfect for these types of scenarios. Simply send a link to each staff member to the company account via email, let them upload their available times, and let MySchedule do the work! You can configure the settings to suit the needs/wants of your staff then just sit back and relax. Try MySchedule today!
+        img(src='/homepage/What_Img.png').whatImg
+      .questions
+        a(name='questions')
+        
+        form
+          label
+            h2 Questions?
+          br
+          input(type='text' name='subject' placeholder='Subject')
+          br
+          br
+          textarea(name='questionsBox' placeholder='Enter questions here')
+      div.organize
+        h2 Are you ready to get organized!
+        a(href='schedule') Create schedule
