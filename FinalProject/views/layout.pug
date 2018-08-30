@@ -4,4 +4,17 @@ head
   link(href='homepage/homepage.css' type='text/css' rel='stylesheet')
   script(src='homepage/homepage.js')
 
-block nav
+  nav
+  .topbar
+      a.topbarReg(href='/') Home
+      a.topbarReg(href='#who we are') Who we are
+      a.topbarReg(href='#how it works') How it works
+      a.topbarReg(href='#questions')  Questions
+      a.login(href='') Log in
+      a.signUp(href='schedule') Sign up
+
+  block content
+
+  footer
+    p copyright stuff
+    p bla bla bla  
