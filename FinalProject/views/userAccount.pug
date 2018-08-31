@@ -1,0 +1,27 @@
+extends ./layout.pug
+
+block content
+    .webpage
+        each val in documents
+            if val.name == "Jason"
+                - let username = documents[0].name
+                .userWelcome
+                    h1.userAccount Welcome Back #{username}
+            else
+                - let username = 'foo'
+                .userWelcome
+                    h1.userAccount Welcome Back #{username}
+                    //exit login
+        .userSidebar
+            div
+                a Home
+                br
+                a Shifts
+                br
+                a Schedule
+                br
+                a Settings
+        .shifts
+            h2 Available shifts
+            hr
+            
