@@ -3,12 +3,17 @@ extends ./layout.pug
 block content
   .webpage
     h1.userCreate Create User Account
-    form.userCreate(action="" method="post" enctype="")
+    form.userCreate(action="../user" method="get" enctype="")
+      label Company name: 
+      input.userCreate(type="text" name="companyName" placeholder="company name")
+      br
       label Username: 
-      input.userCreate(type="text" name="companyName" placeholder="username")
+      input.userCreate(type="text" name="username" placeholder="username")
       br
       label Password: 
       input.userCreate(type="password" name="password" placeholder="password")
       br
       label Confirm Password: 
       input.userCreate(type="text" name="confirmPassword" placeholder="confirm password")
+      br
+      input(type="submit" name="submit")

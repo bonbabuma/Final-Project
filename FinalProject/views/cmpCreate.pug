@@ -3,7 +3,7 @@ extends ./layout.pug
 block content
   .webpage
     h1.cmpCreate Create Company Account
-    form.cmpCreate(action="" method="" enctype="")
+    form.cmpCreate(action="../company" method="get" enctype="")
       label Company: 
       input.cmpCreate(type="text" name="companyName" placeholder="company name")
       br
@@ -12,3 +12,5 @@ block content
       br
       label Confirm Password: 
       input.cmpCreate(type="text" name="confirmPassword" placeholder="confirm password")
+      br
+      input(type="submit" name="submit")

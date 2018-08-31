@@ -1,0 +1,84 @@
+@import '../library/library.scss';
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+div.webpage {
+    height: 100%;
+}
+
+*.userAccount {
+    text-align: center;
+}
+
+div.userWelcome {
+    background-color: $navLightBlue;
+    border: $border;
+    position: relative;
+    top: 1vh;
+    right: 1vh;
+    width: calc(100% - 40vh);
+    float: right;
+    padding: 10px;
+}
+
+div.userSidebar {
+    background-color: #f1f1f1;
+    border: $border;
+    position: relative;
+    top: 1vh;
+    height: 100%;
+    left: 7px;
+    bottom: 0;
+    width: $sidebarWidth;
+    float: left;
+}
+
+div.userSidebar div {
+    margin: 5px;
+}
+
+div.userSidebar div a {
+    border: $border;
+    padding: 15px 17.5px;
+    display: inline-block;
+    width: 29vh; //need to fix zoom problem
+    background-color: #fff;
+}
+
+div.userSidebar div a:hover {
+    background-color: darken(#fff, 15%);
+}
+
+div.userSidebar div a:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+div.userSidebar div a:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+div.shifts {
+    top: 5vh;
+    float: right;
+    width: calc(100% - 40vh);
+    padding: 10px;
+    position: relative;
+    border: $border;
+    background-color: darken(#fff, 15%);
+    right: 1vh;
+}
+
+div.shifts h1 {
+    text-align: center;
+}
+
+div.shifts h2 {
+    text-align: left;
+    margin-left: 1vh;
+}

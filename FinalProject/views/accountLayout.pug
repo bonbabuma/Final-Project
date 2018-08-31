@@ -1,0 +1,28 @@
+doctype html
+head
+  title homepage
+  link(href='accounts/accounts.css' type='text/css' rel='stylesheet')
+
+  nav
+  .topbar
+      a.topbarReg(href='/') Home
+      a.topbarReg(href='#who we are') Who we are
+      a.topbarReg(href='#how it works') How it works
+      a.topbarReg(href='#questions')  Questions
+      .login
+        a.loginButton(href='') Log in
+        .loginDrop
+          form(action="" method="post" enctype="")
+            input(type="text" name="username" placeholder="username")
+            input(type="password" name="password" placeholder="password")
+      .signUp
+        a.signUpButton Sign up
+        .signUpDrop
+          a(href='/company/createAccount') company
+          a(href='/user/createAccount') user
+
+  block content
+
+  footer
+    p copyright stuff
+    p bla bla bla  

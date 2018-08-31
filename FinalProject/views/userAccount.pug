@@ -1,17 +1,10 @@
-extends ./layout.pug
+extends ./accountLayout.pug
 
 block content
     .webpage
-        each val in documents
-            if val.name == "Jason"
-                - let username = documents[0].name
-                .userWelcome
-                    h1.userAccount Welcome Back #{username}
-            else
-                - let username = 'foo'
-                .userWelcome
-                    h1.userAccount Welcome Back #{username}
-                    //exit login
+        .userWelcome
+            h1.userAccount Welcome Back #{username + " " + document[0].name}
+
         .userSidebar
             div
                 a Home
@@ -22,6 +15,8 @@ block content
                 br
                 a Settings
         .shifts
+            h1 Your current position is ${foo}
+            br
             h2 Available shifts
             hr
             
