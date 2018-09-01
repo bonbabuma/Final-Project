@@ -1,0 +1,18 @@
+@import '../../library/library.scss';
+
+div.openShifts, div.filledShifts {
+    position: relative;
+    border: $border;
+    border-radius: 15px;
+    width: calc(50% - 209px);
+    right: 1vh;
+    padding: 10px;
+    top: 2vh;
+    float: right;
+    background-color: darken(#fff, 15%);
+    min-height: calc(100% - 215px);
+}
+
+div.openShifts {
+    margin-left: 1vh;
+}

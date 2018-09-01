@@ -1,5 +1,10 @@
 @import '../../library/library.scss';
 
+
+.webpage {
+    border-top: 1px solid black; /*To take away margin at top*/
+}
+
 .topbar {
     border-bottom: $border;
     background-color: $navBlue;
@@ -7,6 +12,9 @@
     padding: 10px 5px;
     width: 100%;
     float: right;
+    position: fixed;
+    height: 33px;
+    z-index: 2;
 }
 
 .topbar a {

@@ -1,9 +1,5 @@
 @import '../../library/library.scss';
 
-.webpage {
-    border-top: 1px solid black; /*To take away margin at top*/
-}
-
 div#homeImg h2 {
     text-align: center;
     position: relative;
@@ -84,6 +80,7 @@ div p, div h2 {
 .organize {
     background-color: blue;
     padding: 70px 0 200px 0;
+    margin-top: 25px;
 }
 
 .organize h2 {
@@ -93,7 +90,7 @@ div p, div h2 {
 
 .organize a {
     text-decoration: none;
-    left: 50%;
+    left: calc(50% - 125px);
     padding: 24.5px 62.5px;
     border-radius: 3px;
     position: absolute;

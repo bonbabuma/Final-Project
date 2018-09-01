@@ -5,7 +5,63 @@
 
 $font-family: Arial, Helvetica, sans-serif;
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: $font-family;
     margin: 0;
+    height: 100%;
+}
+
+div.webpage {
+    height: 100%;
+}
+
+div.Welcome {
+    background-color: $navLightBlue;
+    border: $border;
+    position: relative;
+    margin-top: 62px;
+    right: 1vh;
+    width: calc(100% - 388px);
+    float: right;
+    padding: 10px;
+}
+
+div.Sidebar {
+    background-color: #f1f1f1;
+    border-right: $border;
+    position: fixed;
+    height: 100%;
+    bottom: 0;
+    width: 325px;
+    float: left;
+    padding: 10px;
+    top: 54px;
+}
+
+div.Sidebar div {
+    margin: 5px;
+}
+
+div.Sidebar div a {
+    border: $border;
+    padding: 15px 17.5px;
+    display: inline-block;
+    width: 277px;
+    background-color: #fff;
+}
+
+div.Sidebar div a:hover {
+    background-color: darken(#fff, 15%);
+}
+
+div.Sidebar div a:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+div.Sidebar div a:last-child {
+    border-radius: 0 0 5px 5px;
 }

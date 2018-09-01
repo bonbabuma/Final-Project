@@ -1,5 +1,9 @@
 @import '../../library/library.scss';
 
+.webpage {
+    border-top: 1px solid black; /*To take away margin at top*/
+}
+
 .topbar {
     border-bottom: $border;
     background-color: $navBlue;
@@ -54,14 +58,17 @@
 
 .signUpDrop a:hover {
     background-color: #ddd;
+    
 }
 
 .signUp:hover .signUpDrop {
     display: block;
+    
 }
 
 .signUp:hover .signUpButton {
     background-color: pink;
+    cursor: pointer;
 }
 
 .login {
@@ -84,4 +91,5 @@
 
 .login:hover .loginButton {
     background-color: lightsalmon;
+    cursor: pointer;
 }
