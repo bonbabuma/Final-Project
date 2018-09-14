@@ -1,0 +1,22 @@
+@import '../library/library.scss';
+
+h1.step2 {
+    text-align: center;
+}
+
+div.selectPosition {
+    border: $border;
+    border-radius: 15px;
+    background-color: #f1f1f1b4;;
+    padding: 15px;
+    margin-left: 25%;
+    width: 50%;
+    position: relative;
+    top: calc(-100% + 85px);   
+    box-shadow: 3px 8px 5px rgba(179, 177, 177, 0.8);
+}
+
+div.selectPosition form select {
+    width: 150px;
+    text-align: center;
+}

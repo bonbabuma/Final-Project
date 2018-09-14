@@ -1,0 +1,40 @@
+@import '../../library/library.scss';
+
+div.openShifts, div.filledShifts {
+    position: relative;
+    border: $border;
+    border-radius: 15px;
+    width: calc(50% - 209px);
+    right: 1vh;
+    padding: 10px;
+    top: 2vh;
+    float: right;
+    background-color: darken(#fff, 15%);
+    min-height: calc(100% - 215px);
+}
+
+div.filledShifts {
+    margin-left: 1vh;
+}
+
+div.filledShifts div {
+    background-color: darken(#fff, 35%);
+    border: $border;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+div.filledShifts div:hover {
+    cursor: pointer;
+}
+
+div.openShifts div {
+    background-color: darken(#fff, 35%);
+    border: $border;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+div.openShifts div:hover {
+    cursor: pointer;
+}

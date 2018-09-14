@@ -1,0 +1,21 @@
+extends ./layout.pug
+
+block content
+    .webpage
+        h1.step2 Create User Account Step 2 #{userCreateInfo.username}
+    - console.log(userCreateInfo)
+        .selectPosition
+            p.step2 please select position
+            form.step2(action="/user" method="post" enctype="")
+                select.step2(name="position" size="1")
+                    each position in userCreateInfo.positions
+                        option(value=position.name) #{position.name}
+                br
+                input(type="hidden" name="createAccount" value="yes")
+                input(type="hidden" name="companyName" value=userCreateInfo.companyName)
+                input(type="hidden" name="username" value=userCreateInfo.username)
+                input(type="hidden" name="password" value=userCreateInfo.password)
+
+                input(type="submit" name="submit")
+
+        

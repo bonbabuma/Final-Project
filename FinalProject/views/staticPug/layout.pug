@@ -6,15 +6,33 @@ head
   nav
   .topbar
       a.topbarReg(href='/') Home
-      a.topbarReg(href='#who we are') Who we are
-      a.topbarReg(href='#how it works') How it works
-      a.topbarReg(href='#questions')  Questions
+      a.topbarReg(href='/#who') Who we are
+      a.topbarReg(href='/#how') How it works
+      a.topbarReg(href='/#questions')  Questions
       .login
         a.loginButton Log in
         .loginDrop
-          form(action="" method="post" enctype="")
-            input(type="text" name="username" placeholder="username")
-            input(type="password" name="password" placeholder="password")
+          .cmpButton Company
+            .cmpDrop
+              form(action="../company" method="post" enctype="")
+                label company:  
+                input(type="text" name="companyName" placeholder="company name")
+                br
+                label password: 
+                input(type="password" name="password" placeholder="password")
+                br
+                input(type="submit" name="submit")
+          .userButton User
+            .userDrop
+              form(action="../user" method="post" enctype="")
+                label username: 
+                input(type="text" name="username" placeholder="username")
+                br
+                label password: 
+                input(type="password" name="password" placeholder="password")
+                br
+                input(type="submit" name="submit")
+
       .signUp
         a.signUpButton Sign up
         .signUpDrop

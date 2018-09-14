@@ -3,7 +3,7 @@ extends ./layout.pug
 block content
   .webpage
     h1.userCreate Create User Account
-    form.userCreate(action="../user" method="get" enctype="")
+    form.userCreate(action="../user/createAccount/step2" method="post" enctype="")
       label Company name: 
       input.userCreate(type="text" name="companyName" placeholder="company name")
       br

@@ -3,7 +3,7 @@ extends ./accountLayout.pug
 block content
     .webpage
         .Welcome
-            h1.userAccount Welcome Back #{username + " " + document[0].name}
+            h1.userAccount Welcome Back #{loginObj.username}
 
         .Sidebar
             div
@@ -15,8 +15,16 @@ block content
                 br
                 a Settings
         .shifts
-            h1 Your current position is ${foo}
+            h1 Your current position is #{loginObj.position.name}
             br
             h2 Available shifts
             hr
-            
+            each shift in loginObj.position.openShifts
+                div.shift
+                    p Name: #{shift.title}
+                    p Description: #{shift.desc}
+
+    script.
+        var userObjString = !{JSON.stringify(loginObjString)};
+    script
+        include ../../api/frontEnd/userAccountLayout.js

@@ -7,18 +7,20 @@ block content
         h2 Welcome To MySchedule
     .content
       div.who
+        a(name='who')
         h2 Who we are
         p
-          | Hi my name is Jason Monette and I'm the creator of MySchedule.com! This webite is the result of my final project for a great coding course that I took called comIT. I doubt that this website will ever get published for any use outside of job/school applications so if you're reading this then your probably looking to hire or accept me into your company/school. I assure you that I will put my best effort for whatever I have applied for. Thanks for viewing my site and welcome to MySchedule.com!
+          | Hi my name is Jason Monette and I'm the creator of MySchedule.com! This webite is the result of my final project for an excellent programming, course which I took, called comIT. I doubt that this website will ever become published be used outside of job/school applications, so if you're reading this then you're probably looking to hire or accept me into your company/school. I assure you that I will put my best effort for whatever I have applied for. Thanks for viewing my site and welcome to MySchedule.com!
       div.how
-        h2 How it works (need to add javascript link)
+        a(name='how')
+        h2 How it works
         p
-          | MySchedule.com uses an algorithm that I wrote that ensures that all positions are filled while no person is double booked. The algorithm can also be configured to satisfy other needs as the company deems neccasary. To view this algorithm you can click the link #[a(href='') here].
+          | The overall function of this web application is really not too complicated once explained. The login/create account options were programmed using simple MongoDB databases and each of the interactive options were programmed using JavaScript or Scss. If you take the time to look over my sourcecode on #[a(href='https://github.com/xXJasonMXx/') GitHub] you will see how the internal workings of my web application works. Anyways, I hope you enjoy what I have Created!
       div.What
         div.what
-          h2 What we do
+          h2 What this does
           p 
-            | This site was built to aid in managing human resourses within a company. For example, if a company such as a hospital needed to organise their staff to accompany their patients, while keeping staff on call and trying not to overwork or double book anyone that would be a very difficult job for a person to manage. However, the algorithm at MySchedule is perfect for these types of scenarios. Simply send a link to each staff member to the company account via email, let them upload their available times, and let MySchedule do the work! You can configure the settings to suit the needs/wants of your staff then just sit back and relax. Try MySchedule today!
+            | The idea of this application was to simplify the process of managing human resources in a company. The main function of this application is to manage overtime and extra shifts for a pool of workers in a single company. Each worker belongs to a certain position, each of which are created and named by their company. From there, the company can post shift openings for anyone with the required position. Once a account is made, a position is created, or a shift is taken the corresponding data is sent to a MongoDb database where it it then further porcessed. I hope you will enjoy my site!
         img(src='final/homepage/What_Img.png').whatImg
       .questions
         a(name='questions')
@@ -33,4 +35,4 @@ block content
           textarea(name='questionsBox' placeholder='Enter questions here')
       div.organize
         h2 Are you ready to get organized!
-        a(href='schedule') Create schedule
+        a(href='/user/createAccount') Join Company!

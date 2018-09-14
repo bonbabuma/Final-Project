@@ -58,7 +58,6 @@
 
 .signUpDrop a:hover {
     background-color: #ddd;
-    
 }
 
 .signUp:hover .signUpDrop {
@@ -83,13 +82,52 @@
     display: none;
     position: absolute;
     margin-top: 30px;
+    border: $border;
+    padding: 10px;
+    background-color: darken(#fff, 10%);
+    right: 5px;
 }
 
 .login:hover .loginDrop {
     display: block;
+    cursor: pointer;
 }
 
 .login:hover .loginButton {
-    background-color: lightsalmon;
+    background-color: lighten(orange, 35%);
     cursor: pointer;
+}
+
+.cmpButton {
+    padding: 12px 16px;
+    display: block;
+}
+
+.cmpButton:hover {
+    background-color: #ddd;
+}
+
+.cmpButton:hover .cmpDrop {
+    display: block;
+}
+
+.userButton {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.userButton:hover {
+    background-color: #ddd;
+}
+
+.userButton:hover .userDrop {
+    display: block;
+}
+
+.userDrop {
+    display: none;
+}
+
+.cmpDrop {
+    display: none;
 }

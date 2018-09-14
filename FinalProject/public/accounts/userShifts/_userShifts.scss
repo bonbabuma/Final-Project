@@ -1,0 +1,12 @@
+@import '../library/library.scss';
+
+div.shifts div {
+    background-color: darken(#fff, 35%);
+    border: $border;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+div.shifts div:hover {
+    cursor: pointer;
+}

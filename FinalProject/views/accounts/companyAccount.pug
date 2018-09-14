@@ -1,25 +1,43 @@
 extends ./accountLayout.pug
 
 block content
+    
     .webpage
         .Welcome
-            h1.userAccount #{companyName} Shift Interface
+            h1.userAccount #{loginInfo.companyName} Shift Interface
         .Sidebar
             div
                 a Home
                 br
-                a Create Shift
+                a.selectPos Select Position
                 br
-                a Schedule
+                a.createPos Create Position
+                br
+                a.createShift Create Shift
                 br
                 a Settings
-        .openShifts
-            h1 Open Shifts
-            hr
-            div
         .filledShifts
             h1 Filled shifts
             hr
-            div
+            each position in loginInfo.positions
+                each shift in position.filledShifts
+                    .shift
+                        p Position: #{position.name}
+                        p Title: #{shift.title}
+                        p Desc: #{shift.Desc}
+                        P Filled by: #{shift.user}
 
+        .openShifts
+            h1 Open Shifts
+            hr
+            each position in loginInfo.positions
+                each shift in position.openShifts
+                    div.shift
+                        p Position: #{position.name}
+                        p Title: #{shift.title}
+                        p Desc: #{shift.desc}
 
+    script.
+        var cmpInfoString = !{JSON.stringify(loginInfo)};
+    script
+        include ../../api/frontEnd/cmpAccountLayout.js

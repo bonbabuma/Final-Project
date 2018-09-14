@@ -13,8 +13,26 @@ div.openShifts, div.filledShifts {
   background-color: #d9d9d9;
   min-height: calc(100% - 215px); }
 
-div.openShifts {
+div.filledShifts {
   margin-left: 1vh; }
+
+div.filledShifts div {
+  background-color: #a6a6a6;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 10px; }
+
+div.filledShifts div:hover {
+  cursor: pointer; }
+
+div.openShifts div {
+  background-color: #a6a6a6;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 10px; }
+
+div.openShifts div:hover {
+  cursor: pointer; }
 
 .right {
   float: right; }
@@ -78,7 +96,8 @@ div.shifts h2 {
   float: right; }
 
 .signUpButton {
-  background-color: red; }
+  background-color: red;
+  cursor: pointer; }
 
 .signUpDrop {
   display: none;
@@ -87,7 +106,8 @@ div.shifts h2 {
   padding: 5px 8px;
   margin-top: 30px;
   box-shadow: 0 8px 16px 0;
-  z-index: 1; }
+  z-index: 1;
+  cursor: pointer; }
 
 .signUpDrop a {
   text-decoration: none;
@@ -108,18 +128,23 @@ div.shifts h2 {
   float: right; }
 
 .loginButton {
-  background-color: orange; }
-
-.loginDrop {
-  display: none;
-  position: absolute;
-  margin-top: 30px; }
-
-.login:hover .loginDrop {
-  display: block; }
+  background-color: orange;
+  margin-right: 10px; }
 
 .login:hover .loginButton {
-  background-color: lightsalmon; }
+  background-color: #ffe4b3; }
+
+.right {
+  float: right; }
+
+div.shifts div {
+  background-color: #a6a6a6;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 10px; }
+
+div.shifts div:hover {
+  cursor: pointer; }
 
 html {
   height: 100%; }
@@ -137,6 +162,7 @@ div.Welcome {
   border: 1px solid black;
   position: relative;
   margin-top: 62px;
+  margin-left: 360px;
   right: 1vh;
   width: calc(100% - 388px);
   float: right;
@@ -164,7 +190,8 @@ div.Sidebar div a {
   background-color: #fff; }
 
 div.Sidebar div a:hover {
-  background-color: #d9d9d9; }
+  background-color: #d9d9d9;
+  cursor: pointer; }
 
 div.Sidebar div a:first-child {
   border-radius: 5px 5px 0 0; }
